@@ -9,6 +9,6 @@ app_file: app.py
 pinned: false
 ---
 
-# Titanic-HugginaFace
+# TP3-HugginaFace
 TP3 + GitHub + 🤗
 
