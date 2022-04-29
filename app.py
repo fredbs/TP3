@@ -8,7 +8,7 @@ Original file is located at
 """
 
 # Install Gradio
-pip install gradio -q
+#pip install gradio -q
 
 # Install timidy
 sudo apt-get install -q -y timidity libsndfile1
