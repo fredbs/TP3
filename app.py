@@ -8,13 +8,13 @@ Original file is located at
 """
 
 # Install Gradio
-#!pip install gradio -q
+pip install gradio -q
 
 # Install timidy
-!sudo apt-get install -q -y timidity libsndfile1
+sudo apt-get install -q -y timidity libsndfile1
 
 # All the imports to deal with sound data
-!pip install pydub numba==0.48 librosa music21
+pip install pydub numba==0.48 librosa music21
 
 # Import Libraries
 
@@ -59,7 +59,7 @@ logger.setLevel(logging.ERROR)
 # Use a file saved on Google Drive
 INPUT_SOURCE = 'https://storage.googleapis.com/download.tensorflow.org/data/c-scale-metronome.wav'
 
-!wget --no-check-certificate 'https://storage.googleapis.com/download.tensorflow.org/data/c-scale-metronome.wav' -O c-scale.wav
+wget --no-check-certificate 'https://storage.googleapis.com/download.tensorflow.org/data/c-scale-metronome.wav' -O c-scale.wav
 
 uploaded_file_name = 'c-scale.wav'
 
@@ -477,7 +477,7 @@ def main(audio):
   # To listen to it on colab, we need to convert it back to wav. An easy way  of 
   # doing that is using Timidity.
 
-  !timidity $converted_audio_file_as_midi -Ow -o $wav_from_created_midi
+  timidity $converted_audio_file_as_midi -Ow -o $wav_from_created_midi
 
   return converted_audio_file, fig1, fig2, fig3, fig4,fig5, bpm, best_notes_and_rests, partitura, wav_from_created_midi
 
